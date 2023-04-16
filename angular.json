@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "jamos-photography"
+    }
+  },
+  "defaultProject": "jamos-photography",
+  "cli": {
+    "analytics": "3cf64a2a-4212-4665-92eb-9fe997151bc9"
+  }
 }
