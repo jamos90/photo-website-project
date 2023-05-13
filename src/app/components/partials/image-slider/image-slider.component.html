@@ -1,0 +1,20 @@
+<div class="image-slider-container">
+  <div class="image-slide-container">
+    <div
+      class="slide"
+      [ngStyle]="{
+        'background-image': getCurrentSlideUrl()
+      }"
+    ></div>
+    <div class="slide-selector-container">
+      <div
+        class="slide-selector"
+        [ngClass]="{ selected: currentIndex === i }"
+        *ngFor="let slide of slides; index as i"
+        (click)="selectSlide(i)"
+      >
+        o
+      </div>
+    </div>
+  </div>
+</div>

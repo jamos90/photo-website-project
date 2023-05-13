@@ -1,0 +1,36 @@
+.image-slider-container {
+  height: 80vh;
+  width: 100vw;
+  margin-top: 5vh;
+
+  .image-slide-container {
+  }
+
+  .slide {
+    height: 80vh;
+  }
+
+  .slide-selector-container {
+    position: absolute;
+    left: 50%;
+    // bottom: 61%;
+
+    .slide-selector {
+      display: inline;
+      // margin-right: 0.2rem;
+      // margin-left: 0.2rem;
+      // -webkit-border-radius: 50%;
+      // -moz-border-radius: 50%;
+      // border-radius: 50%;
+      // background: black;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.selected {
+        color: goldenrod;
+      }
+    }
+  }
+}
