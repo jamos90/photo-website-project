@@ -3,18 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SideNavComponent } from './components/partials/side-nav/side-nav.component';
-import { TopNavComponent } from './components/partials/top-nav/top-nav.component';
-import { ImageSliderComponent } from './components/partials/image-slider/image-slider.component';
+import { HomePageModuleModule } from './modules/home-page/home-page-module.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SideNavComponent,
-    TopNavComponent,
-    ImageSliderComponent
-  ],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, HomePageModuleModule],
   providers: [],
   bootstrap: [AppComponent]
 })
