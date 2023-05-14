@@ -12,6 +12,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 95vh;
   }
 
   .slide {
@@ -27,17 +28,9 @@
 
     .slide-selector {
       display: inline;
-      // margin-right: 0.2rem;
-      // margin-left: 0.2rem;
-      // -webkit-border-radius: 50%;
-      // -moz-border-radius: 50%;
-      // border-radius: 50%;
-      // background: black;
-
       &:hover {
         cursor: pointer;
       }
-
       &.selected {
         color: goldenrod;
       }

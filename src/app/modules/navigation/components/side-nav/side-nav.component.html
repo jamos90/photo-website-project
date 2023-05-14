@@ -1,11 +1,13 @@
 <div class="app-side-nav-container">
-  <div (click)=toggleMenu() *ngIf="!showMenu">
-    <span>Menu toggle</span>
+  <div (click)="toggleMenu()" *ngIf="!showMenu">
+    <app-hamburger-menu-icon
+      [menuStyles]="menuStyles"
+    ></app-hamburger-menu-icon>
   </div>
-  <div *ngIf="showMenu">
-      <div (click)="toggleMenu()">x</div>
-      <div *ngFor="let category of categoriesArray" class="category-list">
-          <span class="category-title" >{{category.title}}</span>
-      </div>
+  <div *ngIf="showMenu" class="category-list">
+    <div class="close-icon" (click)="toggleMenu()">x</div>
+    <div *ngFor="let category of categoriesArray" class="category-item">
+      <span class="category-title">{{ category.title }}</span>
+    </div>
   </div>
 </div>
