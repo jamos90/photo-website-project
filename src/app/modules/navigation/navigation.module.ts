@@ -1,0 +1,11 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TopNavComponent } from './components/top-nav/top-nav.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
+
+@NgModule({
+  declarations: [TopNavComponent, SideNavComponent],
+  imports: [CommonModule],
+  exports: [TopNavComponent, SideNavComponent]
+})
+export class NavigationModule {}

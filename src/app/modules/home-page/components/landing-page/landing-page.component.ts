@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Categories } from '../../interfaces/categories';
 
 @Component({
   selector: 'app-landing-page',
@@ -6,10 +7,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
-
+  categoriesArray: Array<Categories> = [
+    {
+      title: 'Landscape',
+      code: 'landscape',
+      path: '/landscape'
+    },
+    {
+      title: 'Portrait',
+      code: 'portrait',
+      path: '/portrait'
+    },
+    {
+      title: 'Fashion',
+      code: 'fashion',
+      path: '/fashion'
+    },
+    {
+      title: 'Long exposure',
+      code: 'longexposure',
+      path: '/longexposure'
+    }
+  ];
 }
